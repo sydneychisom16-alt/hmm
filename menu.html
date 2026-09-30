@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  *{
+        margin: 0%;
+        padding: 0;
+        box-sizing: border-box;
+      }
+       nav, img{
+            height: 20px;
+       }
+       nav{
+        display: flex;
+         height: 70px;
+            padding: 0 5%;
+            justify-content:space-between;
+            background-color: black;
+            align-items:center;
+       }
+       nav h1,h3{
+        color: white;
+       }
+        nav, ul{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            color: white;
+        }
+        nav button{
+            background-color:yellow ;
+            padding: 10px;
+            border-radius: 5px;
+        }
+         nav a{
+            text-decoration: none;
+            color: white;
+            padding-bottom:20px;
+        }
+        nav li:hover{
+         border-bottom: 2px solid orange;
+        }
+        body {
+    margin: 0;
+    font-family: Arial;
+    background: white;
+}
+.categories {
+    text-align: center;
+    margin: 20px;
+}
+
+.categories button {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.categories button:first-child {
+    background: orange;
+    color: white;
+}
+
+.banner {
+    background-image: url("food.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 160px;
+}
+
+.banner h1 {
+    font-size: 50px;
+}
+
+.title {
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+}
+
+.food {
+    background: white;
+    width: 250px;
+    display:inline-block;
+    margin: 10px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.food img {
+    width: 100%;
+    height: 150px;
+    border-radius: 25px;
+}
+
+.food h3,
+.food p,
+.food b {
+    margin-left: 15px;
+}
+.chef {
+    background-image: url("steak.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px;
+    margin-top: 30px;
+}
+
+button {
+    background: orange;
+    border: none;
+    padding: 10px;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 30px;
+    margin-top: 30px;
+}
+.site-footer {
+  background-color: black;
+  color: aqua;
+  padding: 60px 20px 20px;
+  font-size: 0.85rem;
+}
+
+.site-footer .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer-col h4 {
+  color: blue;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.brand-col .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.logo-icon {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.brand-title {
+  display: block;
+  font-family: 'Georgia', serif;
+  color:red;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.brand-sub {
+  display: block;
+  font-size: 0.65rem;
+  color: blue;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  line-height: 1.5;
+  color: aqua;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: pink;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: green;
+}
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 16px;
+  color: blanchedalmond;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons a {
+  color: white;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+  color:orange;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+  text-align: center;
+  color: grey;
+  font-size: 0.78rem;
+}
+
+@media (max-width: 768px) {
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+@media(max-width:500px){
+  nav ul{
+    display: none;
+    color: white;
+  }
+  nav div:last-of-type{
+    display: block;
+  }
+}
+@media(max-width:500px){
+  .hero{
+    padding: 15px 10px;
+  }
+  .one{
+    flex-direction: column;
+  }
+  .one div{
+    width: 100px;
+    margin-bottom:30px;
+  }
+  .four{
+    flex-direction: column;
+  }
+}
+.a img{
+  width: 100%;
+  height: 100%;
+}
+    </style>
+</head>
+<body>
+    <section>
+         <nav>
+        <div class="logo">
+          <h1>lUNA</h1>
+          <h3>BRISTOl</h3>
+        </div>
+        <ul>
+             <li class="active">
+                <a href="home.html">home</a>
+            </li>
+            <li>
+                <a href="menu.html">menu</a>
+                 </li>
+                 <li>
+                <a href="abbout.html">about</a>
+                 </li>
+                 <li>
+                <a href="">contact</a>
+                 </li>
+        </ul>
+        <div>
+            <span><i class="fa-solid fa-right-to-bracket"></i></span>
+            <button>reserve table</button>
+        </div>
+        <div><i class="fa-solid fa-burger"></i></div>
+         </nav>
+         <section class="me">
+    <div class="banner">
+        <h1>Our Menu</h1>
+        <p>Fresh flavors. Carefully prepared dishes.</p>
+    </div>
+    <div class="categories">
+    <button>All</button>
+    <button>Breakfast</button>
+    <button>Main Course</button>
+    <button>Desserts</button>
+    <button>Drinks</button>
+</div>
+
+    <h2 class="title">All Dishes</h2>
+
+    <div class="menu">
+
+        <div class="food">
+            <img src="salmon.jpg">
+            <h3>Grilled Salmon</h3>
+            <p>Fresh salmon with garlic butter and herbs.</p>
+            <b>$25</b>
+        </div>
+
+        <div class="food">
+            <img src="hm.jpg">
+            <h3>Jollof Rice</h3>
+            <p>Smoky party-style jollof served with plantain.</p>
+            <b>$15</b>
+        </div>
+
+        <div class="food">
+            <img src="steak.jpg">
+            <h3>Beef Steak</h3>
+            <p>Grilled steak with mashed potatoes.</p>
+            <b>$30</b>
+        </div>
+
+        <div class="food">
+            <img src="pasta.jpg">
+            <h3>Chicken Alfredo</h3>
+            <p>Creamy pasta with chicken and parmesan.</p>
+            <b>$18</b>
+        </div>
+
+        <div class="food">
+            <img src="pepper-soup.jpg">
+            <h3>Pepper Soup</h3>
+            <p>Spicy goat meat pepper soup.</p>
+            <b>$12</b>
+        </div>
+
+        <div class="food">
+            <img src="salad.jpg">
+            <h3>Vegetable Salad</h3>
+            <p>Fresh vegetables with olive oil dressing.</p>
+            <b>$10</b>
+        </div>
+          <div class="food">
+            <img src="salad.jpg">
+            <h3>Vegetable Salad</h3>
+            <p>Fresh vegetables with olive oil dressing.</p>
+            <b>$10</b>
+        </div>
+          <div class="food">
+            <img src="salad.jpg">
+            <h3>Vegetable Salad</h3>
+            <p>Fresh vegetables with olive oil dressing.</p>
+            <b>$10</b>
+        </div>
+          <div class="food">
+            <img src="salad.jpg">
+            <h3>Vegetable Salad</h3>
+            <p>Fresh vegetables with olive oil dressing.</p>
+            <b>$10</b>
+        </div>
+        <div class="food">
+            <img src="salmon.jpg">
+            <h3>Grilled Salmon</h3>
+            <p>Fresh salmon with garlic butter and herbs.</p>
+            <b>$25</b>
+        </div>
+
+    </div>
+
+
+    <div class="chef">
+
+        <h1>Chef's Recommendation</h1>
+
+        <h3>Signature Steak</h3>
+
+        <p>
+            Premium steak grilled to perfection,
+            served with vegetables and mashed potatoes.
+        </p>
+
+        <b>$35</b>
+
+        <br><br>
+
+        <button>Order Now</button>
+
+    </div>
+
+       <footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand & Tagline -->
+      <div class="footer-col brand-col">
+        <div class="logo">
+          <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.4 19 2c1 2 2 4.1 2 9 0 4.9-4 9-9 9z"/>
+            <path d="M11 20v-8"/>
+          </svg>
+          <div class="logo-text">
+            <span class="brand-title">LUNA</span>
+            <span class="brand-sub">BISTRO</span>
+          </div>
+        </div>
+        <p class="tagline">Good food. Good mood.<br>Great memories.</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <div class="hours-grid">
+          <span>Mon – Fri</span>
+          <span>11:00 AM – 10:00 PM</span>
+          <span>Sat – Sun</span>
+          <span>10:00 AM – 11:00 PM</span>
+        </div>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Luna Bistro. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+         </section>
+</body>
+</html>
